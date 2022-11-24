@@ -4,32 +4,35 @@ let coin = document.querySelector(".coin");
 let flipBtn = document.querySelector("#flip-button");
 let resetBtn = document.querySelector("#reset-button");
 let op = document.querySelector('#op');
+const premio = 1000000;
+
 
 flipBtn.addEventListener("click", () =>{
 
-  let i = Math.floor(Math.random() * 2);
+  let random = Math.floor(Math.random() * 2);
   
   coin.getElementsByClassName.animation = "none";
   let opcion=parseInt(op.value)
-  if(i){
+  if(random){
     coin.style.animation = "spin-heads 3s forwards";
     setTimeout(function(){
       
-      if(opcion===i){
+      if(opcion===random){
         Swal.fire({
-            title: "Felicidades, ganaste",
+            title: "Felicidades, ganaste :D",
             icon: 'success'
             
         });
-        console.log(i)
+        console.log(random)
+        alert("Tu premio es: "+premio)
       }
       else{
         Swal.fire({
-            title: "Perdiste",
+            title: "Perdiste D:",
             icon: 'error'
             
         });
-        console.log(i)
+        console.log(random)
       }
       
     }, 3000);
@@ -38,22 +41,23 @@ flipBtn.addEventListener("click", () =>{
     coin.style.animation = "spin-tails 3s forwards";
     setTimeout(function(){
       
-      if(opcion===i){
+      if(opcion===random){
        
         Swal.fire({
-            title: "Felicidades, ganaste",
+            title: "Felicidades, ganaste :D",
             icon: 'success'
             
         });
-        console.log(i)
+        console.log(random)
+        alert("Tu premio es: "+premio)
       }
       else{
         Swal.fire({
-            title: "Perdiste",
+            title: "Perdiste D:",
             icon: 'error'
             
         });
-        console.log(i)
+        console.log(random)
       }
       
     },3000);
