@@ -19,12 +19,11 @@ flipBtn.addEventListener("click", () =>{
       
       if(opcion===random){
         Swal.fire({
-            title: "Felicidades, ganaste :D",
+            title: "Felicidades, ganaste, tu premio es $ 1000.000 :D",
             icon: 'success'
             
         });
         console.log(random)
-        alert("Tu premio es: "+premio)
       }
       else{
         Swal.fire({
@@ -44,12 +43,11 @@ flipBtn.addEventListener("click", () =>{
       if(opcion===random){
        
         Swal.fire({
-            title: "Felicidades, ganaste :D",
+          title: "Felicidades, ganaste, tu premio es $ 1000.000 :D",
             icon: 'success'
             
         });
         console.log(random)
-        alert("Tu premio es: "+premio)
       }
       else{
         Swal.fire({
